@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './partials/Navbar/navbar';
+import Footer from './partials/Footer/footer';
+import Home from './components/HomePage/homepage';
+import Products from './components/HomePage/Productpage';
+import Store from './components/HomePage/Storepage';
+import Vivostore from './components/HomePage/Vivostore';
+import Community from './components/HomePage/Community';
+import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/src/components/HomePage/productpage.js' exact element={<Products />} />
+          <Route path='/src/components/HomePage/Storepage.js' exact element={<Store />} />
+          <Route path='/src/components/HomePage/Vivostore.js' exact element={<Vivostore />} />
+          <Route path='/src/components/HomePage/Community.js' exact element={<Community />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

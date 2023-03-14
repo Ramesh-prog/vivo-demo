@@ -1,0 +1,109 @@
+.whole {
+    background-color: yellow;
+}
+
+.img_top {
+    width: 100%;
+}
+
+.top_top {
+    margin: 50px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.top_top .text_one {
+    width: 50%;
+}
+
+.top_top h4 {
+    margin-top: 10px;
+}
+
+.top_top button {
+    border: 2px solid white;
+    margin-top: 50px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.top_top button:hover {
+    font-size: 1.5rem;
+    color: blue;
+}
+
+
+.top_second {
+    background-color: #f5f6fb;
+    padding: 10%;
+}
+
+.top_second_img {
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.top_second_one {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second_text button{
+    border: 0px solid white;
+    background: none;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.top_second_one .second_text {
+    position: absolute;
+    color: black;
+    margin-left: 10%;
+}
+
+.top_second_two {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_second_two .second_text_two {
+    position: absolute;
+    color: white;
+    margin-left: 10%;
+}
+
+.second_text_two button{
+    border: 0px solid white;
+    background: none;
+    color: white;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.top_third{
+    background-color: #f5f6fb;
+    padding: 5%;
+}
+
+.top_third h1{
+    padding: 0;
+}
+
+.top_third_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_third_div img{
+    border-radius: 30px;
+    padding: 10px;
+}
+
